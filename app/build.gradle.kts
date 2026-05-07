@@ -11,11 +11,20 @@ android {
         version = release(36)
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("keystore/hpp-release-key.jks")
+            storePassword = "hppcalculator"
+            keyAlias = "hpp-key"
+            keyPassword = "hppcalculator"
+        }
+    }
+
     defaultConfig {
         applicationId = "com.seal.hppcalculator"
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -24,6 +33,8 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
+
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -68,6 +79,6 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
     
-    // AdMob
-    implementation("com.google.android.gms:play-services-ads:23.0.0")
+    // AdMob - DIMATIKAN SEMENTARA
+    // implementation("com.google.android.gms:play-services-ads:23.0.0")
 }

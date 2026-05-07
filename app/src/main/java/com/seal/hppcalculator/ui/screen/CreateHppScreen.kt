@@ -20,7 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.platform.LocalContext
-import com.seal.hppcalculator.ads.loadAndShowRewardedAd
+// import com.seal.hppcalculator.ads.loadAndShowRewardedAd  // IKLAN DIMATIKAN
 import com.seal.hppcalculator.data.model.Ingredient
 import com.seal.hppcalculator.viewmodel.HppViewModel
 
@@ -61,10 +61,13 @@ fun CreateHppScreen(
                     onClick = {
                         if (!isSaving) {
                             isSaving = true
-                            loadAndShowRewardedAd(context) {
-                                viewModel.saveDraft()
-                                onNavigateBack()
-                            }
+                            // IKLAN DIMATIKAN
+                            // loadAndShowRewardedAd(context) {
+                            //     viewModel.saveDraft()
+                            //     onNavigateBack()
+                            // }
+                            viewModel.saveDraft()
+                            onNavigateBack()
                         }
                     },
                     enabled = !isSaving,

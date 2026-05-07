@@ -31,7 +31,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.seal.hppcalculator.data.model.ProductCost
 import com.seal.hppcalculator.viewmodel.HppViewModel
-import com.seal.hppcalculator.ads.AdBanner
+// import com.seal.hppcalculator.ads.AdBanner  // IKLAN DIMATIKAN
 import java.util.Locale
 
 enum class BottomNavItem(val title: String, val icon: ImageVector) {
@@ -271,7 +271,8 @@ fun HomeDashboard(
         
         item {
             Spacer(modifier = Modifier.height(24.dp))
-            AdBanner(modifier = Modifier.padding(horizontal = 24.dp))
+            // IKLAN DIMATIKAN
+            // AdBanner(modifier = Modifier.padding(horizontal = 24.dp))
         }
         
         item {
@@ -468,7 +469,8 @@ fun DataHppList(
                     // Show an ad every 3 items
                     if ((index + 1) % 3 == 0 && index != filteredHistory.size - 1) {
                         Spacer(modifier = Modifier.height(16.dp))
-                        AdBanner(modifier = Modifier.fillMaxWidth())
+                        // IKLAN DIMATIKAN
+                        // AdBanner(modifier = Modifier.fillMaxWidth())
                     }
                 }
             }

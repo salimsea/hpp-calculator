@@ -24,4 +24,30 @@ interface HppDao {
     
     @Query("DELETE FROM ingredients WHERE productCostId = :productId")
     suspend fun deleteIngredientsForProduct(productId: Long)
+
+    // Cash Transactions
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertCashTransaction(transaction: CashTransactionEntity): Long
+
+    @Query("SELECT * FROM cash_transactions ORDER BY date DESC, id DESC")
+    fun getAllCashTransactions(): Flow<List<CashTransactionEntity>>
+
+    @Query("DELETE FROM cash_transactions WHERE id = :id")
+    suspend fun deleteCashTransaction(id: Long)
+
+    @Query("DELETE FROM ingredients")
+    suspend fun deleteAllIngredients()
+
+    @Query("DELETE FROM product_costs")
+    suspend fun deleteAllProductCosts()
+
+    @Query("DELETE FROM cash_transactions")
+    suspend fun deleteAllCashTransactions()
+
+    @Transaction
+    suspend fun clearAllData() {
+        deleteAllIngredients()
+        deleteAllProductCosts()
+        deleteAllCashTransactions()
+    }
 }

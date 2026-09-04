@@ -9,10 +9,14 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.seal.hppcalculator.data.repository.HppRepository
 import com.seal.hppcalculator.ui.screen.CreateHppScreen
+import com.seal.hppcalculator.ui.screen.DataHppScreen
+import com.seal.hppcalculator.ui.screen.InspirasiResepScreen
 import com.seal.hppcalculator.ui.screen.MainScreen
+import com.seal.hppcalculator.ui.screen.MarkupOjolScreen
 import com.seal.hppcalculator.ui.screen.OnboardingScreen
 import com.seal.hppcalculator.ui.screen.ResultScreen
 import com.seal.hppcalculator.ui.screen.SplashScreen
+import com.seal.hppcalculator.ui.screen.TargetImpasBepScreen
 import com.seal.hppcalculator.viewmodel.HppViewModel
 import com.seal.hppcalculator.viewmodel.HppViewModelFactory
 
@@ -50,7 +54,23 @@ fun AppNavigation(
             MainScreen(
                 viewModel = viewModel,
                 onNavigateToCreate = { navController.navigate("create") },
-                onNavigateToResult = { id -> navController.navigate("result/$id") }
+                onNavigateToResult = { id -> navController.navigate("result/$id") },
+                onNavigateToMarkupOjol = { navController.navigate("markup_ojol") },
+                onNavigateToTargetBep = { navController.navigate("target_impas_bep") },
+                onNavigateToDataHpp = { navController.navigate("data_hpp") },
+                onResetAppToOnboarding = {
+                    navController.navigate("onboarding") {
+                        popUpTo("home") { inclusive = true }
+                    }
+                }
+            )
+        }
+        composable("data_hpp") {
+            DataHppScreen(
+                viewModel = viewModel,
+                onNavigateBack = { navController.popBackStack() },
+                onNavigateToResult = { id -> navController.navigate("result/$id") },
+                onNavigateToCreate = { navController.navigate("create") }
             )
         }
         composable("create") {
@@ -70,8 +90,29 @@ fun AppNavigation(
                 productId = id,
                 onNavigateBack = { navController.popBackStack() },
                 onNavigateToHome = {
-                    navController.popBackStack("home", false)
-                }
+                    navController.navigate("home") {
+                        popUpTo("home") { inclusive = true }
+                    }
+                },
+                onNavigateToEdit = { navController.navigate("create") }
+            )
+        }
+        composable("markup_ojol") {
+            MarkupOjolScreen(
+                onNavigateBack = { navController.popBackStack() }
+            )
+        }
+        composable("target_impas_bep") {
+            TargetImpasBepScreen(
+                onNavigateBack = { navController.popBackStack() }
+            )
+        }
+        composable("inspirasi_resep") {
+            InspirasiResepScreen(
+                viewModel = viewModel,
+                onNavigateBack = { navController.popBackStack() },
+                onNavigateToCreate = { navController.navigate("create") },
+                onNavigateToResult = { id -> navController.navigate("result/$id") }
             )
         }
     }

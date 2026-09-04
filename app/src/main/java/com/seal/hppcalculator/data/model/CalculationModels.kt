@@ -88,3 +88,54 @@ fun Ingredient.toEntity(productCostId: Long): com.seal.hppcalculator.data.local.
         unit = unit
     )
 }
+
+data class SampleRecipe(
+    val id: String = "",
+    val name: String = "",
+    val category: String = "FNB",
+    val targetProduction: Double = 1.0,
+    val marginPercent: Double = 50.0,
+    val description: String = "",
+    val dailySalesTarget: Int = 10,
+    val targetDays: Int = 30,
+    val businessTips: String = "",
+    val ingredients: List<Ingredient> = emptyList()
+) {
+    fun toProductCost(): ProductCost {
+        return ProductCost(
+            id = 0,
+            category = category,
+            productName = name,
+            productionQty = targetProduction,
+            packagingCost = 0.0,
+            laborCost = 0.0,
+            overheadCost = 0.0,
+            marginPercent = marginPercent,
+            ingredients = ingredients
+        )
+    }
+
+    val productCost: ProductCost
+        get() = toProductCost()
+
+    val hppPerUnit: Double
+        get() = productCost.hppPerUnit
+
+    val hargaJual: Double
+        get() = productCost.hargaJual
+
+    val labaPerUnit: Double
+        get() = productCost.profitPerUnit
+
+    val labaHarian: Double
+        get() = labaPerUnit * dailySalesTarget
+
+    val totalLabaPeriode: Double
+        get() = labaHarian * targetDays
+
+    val omsetHarian: Double
+        get() = hargaJual * dailySalesTarget
+
+    val totalOmsetPeriode: Double
+        get() = omsetHarian * targetDays
+}

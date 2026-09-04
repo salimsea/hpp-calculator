@@ -1,0 +1,834 @@
+[
+  {
+    "id": "tahu_crispy",
+    "name": "Tahu Crispy Gurih",
+    "category": "FNB",
+    "targetProduction": 50,
+    "marginPercent": 65.0,
+    "description": "Camilan gorengan renyah tahan lama dengan modal terjangkau dan perputaran cepat untuk jualan pinggir jalan / booth.",
+    "dailySalesTarget": 50,
+    "targetDays": 30,
+    "businessTips": "Tahu crispy memiliki margin laba tinggi (>60%). Kunci suksesnya adalah minyak yang selalu panas dan bumbu tabur aneka rasa (balado, jagung bakar, BBQ).",
+    "ingredients": [
+      {
+        "name": "Tahu Putih Segar (10 Kotak)",
+        "cost": 30000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Tepung Terigu Protein Sedang (500 gr)",
+        "cost": 6000.0,
+        "amountUsed": 1.0,
+        "unit": "bungkus"
+      },
+      {
+        "name": "Tepung Maizena / Tapioka (150 gr)",
+        "cost": 4000.0,
+        "amountUsed": 1.0,
+        "unit": "bungkus"
+      },
+      {
+        "name": "Bumbu Kaldu Bubuk & Garam",
+        "cost": 3500.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Baking Powder & Bawang Putih Halus",
+        "cost": 2500.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Minyak Goreng Sawit (1 Liter)",
+        "cost": 16000.0,
+        "amountUsed": 1.0,
+        "unit": "liter"
+      },
+      {
+        "name": "Kantong Kertas Snack (50 pcs)",
+        "cost": 10000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Cabai Rawit Hijau Segar",
+        "cost": 5000.0,
+        "amountUsed": 1.0,
+        "unit": "bungkus"
+      },
+      {
+        "name": "Gas Elpiji & Operasional Goreng",
+        "cost": 10000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "kopi_aren",
+    "name": "Es Kopi Susu Gula Aren",
+    "category": "FNB",
+    "targetProduction": 25,
+    "marginPercent": 60.0,
+    "description": "Minuman kopi susu kekinian paling populer dengan rasa creamy dan manis legit gula aren asli.",
+    "dailySalesTarget": 35,
+    "targetDays": 30,
+    "businessTips": "Kombinasikan espresso blend robusta-arabika dengan sirup aren cair kental untuk aroma harum khas.",
+    "ingredients": [
+      {
+        "name": "Biji Kopi House Blend (350 gr)",
+        "cost": 45000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Susu UHT Full Cream (2 Liter)",
+        "cost": 36000.0,
+        "amountUsed": 1.0,
+        "unit": "kotak"
+      },
+      {
+        "name": "Gula Aren Cair Premium (500 ml)",
+        "cost": 22000.0,
+        "amountUsed": 1.0,
+        "unit": "botol"
+      },
+      {
+        "name": "Susu Evaporasi (1 Kaleng)",
+        "cost": 16000.0,
+        "amountUsed": 1.0,
+        "unit": "kaleng"
+      },
+      {
+        "name": "Cup Plastik 16oz + Tutup Lid (25 pcs)",
+        "cost": 17500.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Sedotan Higienis & Kantong Cup (25 pcs)",
+        "cost": 5000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Es Batu Kristal Tube (1 Kantong)",
+        "cost": 8000.0,
+        "amountUsed": 1.0,
+        "unit": "kantong"
+      },
+      {
+        "name": "Listrik Mesin & Operasional",
+        "cost": 20000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "dimsum_ayam",
+    "name": "Dimsum Siomay Ayam (Isi 4)",
+    "category": "FNB",
+    "targetProduction": 40,
+    "marginPercent": 50.0,
+    "description": "Dimsum kukus lembut dengan daging paha ayam juicy, wortel segar, dan saus sambal cocolan khas.",
+    "dailySalesTarget": 30,
+    "targetDays": 30,
+    "businessTips": "Dapat dijual hangat matang di outlet atau dalam bentuk frozen pack untuk stok reseller.",
+    "ingredients": [
+      {
+        "name": "Daging Fillet Paha Ayam (1.5 kg)",
+        "cost": 90000.0,
+        "amountUsed": 1.0,
+        "unit": "kg"
+      },
+      {
+        "name": "Udang Kupas Cincang (300 gr)",
+        "cost": 35000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Kulit Pangsit Siomay (160 lembar)",
+        "cost": 20000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Tepung Tapioka & Bumbu Dapur",
+        "cost": 18000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Minyak Wijen & Saus Tiram",
+        "cost": 12000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Saus Sambal Dimsum Spesial",
+        "cost": 25000.0,
+        "amountUsed": 1.0,
+        "unit": "botol"
+      },
+      {
+        "name": "Mika Bento Box & Garpu Kecil (40 pcs)",
+        "cost": 30000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Gas Kukusan & Tenaga Kerja",
+        "cost": 40000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "kaos_distro",
+    "name": "Kaos Polos Distro Combed 30s",
+    "category": "RETAIL",
+    "targetProduction": 30,
+    "marginPercent": 45.0,
+    "description": "Produk pakaian kasual bahan katun adem combed 30s premium dengan sablon logo minimalis siap kirim.",
+    "dailySalesTarget": 10,
+    "targetDays": 30,
+    "businessTips": "Sangat cocok untuk jualan marketplace / TikTok Live dengan kemasan rapi dan free stiker bonus.",
+    "ingredients": [
+      {
+        "name": "Bahan Kaos Cotton Combed 30s (30 pcs)",
+        "cost": 750000.0,
+        "amountUsed": 1.0,
+        "unit": "lusin"
+      },
+      {
+        "name": "Sablon DTF Logo Minimalis (30 pcs)",
+        "cost": 150000.0,
+        "amountUsed": 1.0,
+        "unit": "lembar"
+      },
+      {
+        "name": "Label woven & Hangtag Merk",
+        "cost": 45000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Plastik Ziplock Polymailer & Free Stiker",
+        "cost": 45000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Ongkir Ekspedisi Kulakan Bahan",
+        "cost": 90000.0,
+        "amountUsed": 1.0,
+        "unit": "trip"
+      }
+    ]
+  },
+  {
+    "id": "cuci_sepatu",
+    "name": "Jasa Deep Clean Cuci Sepatu",
+    "category": "SERVICE",
+    "targetProduction": 20,
+    "marginPercent": 80.0,
+    "description": "Layanan pencucian menyeluruh sepatu sneakers/kulit dengan sabun cleaner khusus dan anti-bakteri.",
+    "dailySalesTarget": 12,
+    "targetDays": 30,
+    "businessTips": "Bisnis jasa memiliki margin tertinggi (>75%). Berikan garansi wangi dan silica gel gratis untuk repeat order.",
+    "ingredients": [
+      {
+        "name": "Shoe Cleaner Foam Premium (1 Botol)",
+        "cost": 35000.0,
+        "amountUsed": 1.0,
+        "unit": "botol"
+      },
+      {
+        "name": "Parfum Sepatu Antibakterial",
+        "cost": 25000.0,
+        "amountUsed": 1.0,
+        "unit": "botol"
+      },
+      {
+        "name": "Silica Gel & Plastik Ziplock Sepatu (20 pcs)",
+        "cost": 20000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Penyusutan Sikat & Lap Microfiber",
+        "cost": 10000.0,
+        "amountUsed": 1.0,
+        "unit": "batch"
+      },
+      {
+        "name": "Listrik Dryer & Tenaga Kerja Pembersihan",
+        "cost": 40000.0,
+        "amountUsed": 1.0,
+        "unit": "batch"
+      }
+    ]
+  },
+  {
+    "id": "ayam_geprek",
+    "name": "Paket Nasi Ayam Geprek Sambal Bawang",
+    "category": "FNB",
+    "targetProduction": 30,
+    "marginPercent": 50.0,
+    "description": "Menu makanan favorit sejuta umat dengan ayam renyah gurih, sambal bawang pedas nampol, dan nasi putih hangat.",
+    "dailySalesTarget": 35,
+    "targetDays": 30,
+    "businessTips": "Tawarkan level kepedasan cabai dan paket komplit dengan es teh manis untuk meningkatkan nilai rata-rata pesanan.",
+    "ingredients": [
+      {
+        "name": "Ayam Potong Segar (3 ekor / 30 potong)",
+        "cost": 105000.0,
+        "amountUsed": 1.0,
+        "unit": "ekor"
+      },
+      {
+        "name": "Beras Pulen Berkualitas (3 kg)",
+        "cost": 42000.0,
+        "amountUsed": 1.0,
+        "unit": "kg"
+      },
+      {
+        "name": "Tepung Bumbu Krispi & Bumbu Marinasi",
+        "cost": 25000.0,
+        "amountUsed": 1.0,
+        "unit": "bungkus"
+      },
+      {
+        "name": "Cabai Rawit Merah & Bawang Putih",
+        "cost": 28000.0,
+        "amountUsed": 1.0,
+        "unit": "kg"
+      },
+      {
+        "name": "Minyak Goreng Goreng & Siraman Sambal",
+        "cost": 24000.0,
+        "amountUsed": 1.0,
+        "unit": "liter"
+      },
+      {
+        "name": "Kotak Makan Kertas Foodgrade (30 pcs)",
+        "cost": 21000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Gas Elpiji & Lalapan Timun",
+        "cost": 20000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "snack_repack",
+    "name": "Repackaging Keripik Pedas Kiloan (100gr)",
+    "category": "RETAIL",
+    "targetProduction": 50,
+    "marginPercent": 60.0,
+    "description": "Kulakan keripik bal-balan 5kg lalu dikemas ulang ke pouch cantik 100gr untuk dijual di marketplace & warung mitra.",
+    "dailySalesTarget": 30,
+    "targetDays": 30,
+    "businessTips": "Bisnis repackaging tidak butuh dapur masak. Kuncinya ada pada desain standing pouch kedap udara dan stiker logo yang menarik.",
+    "ingredients": [
+      {
+        "name": "Keripik Kaca Pedas Bal-balan (5 kg)",
+        "cost": 160000.0,
+        "amountUsed": 1.0,
+        "unit": "bal"
+      },
+      {
+        "name": "Standing Pouch Foil Klip 100gr (50 pcs)",
+        "cost": 35000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Stiker Label Merek Transparan (50 pcs)",
+        "cost": 15000.0,
+        "amountUsed": 1.0,
+        "unit": "lembar"
+      },
+      {
+        "name": "Kardus Packing & Lakban Seal",
+        "cost": 20000.0,
+        "amountUsed": 1.0,
+        "unit": "batch"
+      }
+    ]
+  },
+  {
+    "id": "cuci_motor",
+    "name": "Jasa Cuci Motor & Semir Body Halus",
+    "category": "SERVICE",
+    "targetProduction": 25,
+    "marginPercent": 75.0,
+    "description": "Jasa cuci motor bersih menyeluruh kolong dan body, diakhiri dengan semir ban tahan debu dan semir body kinclong.",
+    "dailySalesTarget": 20,
+    "targetDays": 30,
+    "businessTips": "Sediakan kartu kupon 'Cuci 5x Gratis 1x' untuk mengunci loyalitas pelanggan di sekitar tempat tinggal.",
+    "ingredients": [
+      {
+        "name": "Shampoo Motor Touchless Snow (1 Liter)",
+        "cost": 25000.0,
+        "amountUsed": 1.0,
+        "unit": "liter"
+      },
+      {
+        "name": "Semir Ban Wet-Look Silikon (500 ml)",
+        "cost": 20000.0,
+        "amountUsed": 1.0,
+        "unit": "botol"
+      },
+      {
+        "name": "Dressing Body Motor Kinclong",
+        "cost": 18000.0,
+        "amountUsed": 1.0,
+        "unit": "botol"
+      },
+      {
+        "name": "Penyusutan Spons & Lap Chamois",
+        "cost": 12000.0,
+        "amountUsed": 1.0,
+        "unit": "batch"
+      },
+      {
+        "name": "Air Bersih PDAM & Listrik Jet Cleaner",
+        "cost": 25000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "basreng_pedas",
+    "name": "Basreng Pedas Kriuk Viral (Bakso Goreng)",
+    "category": "FNB",
+    "targetProduction": 40,
+    "marginPercent": 65.0,
+    "description": "Cemilan kering asal Bandung yang viral di TikTok, irisan bakso goreng renyah dengan bumbu tabur pedas daun jeruk yang bikin nagih.",
+    "dailySalesTarget": 40,
+    "targetDays": 30,
+    "businessTips": "Basreng tahan lama (tidak mudah basi) sehingga cocok dijual online lintas kota. Buat varian level pedas dan rasa (balado, keju, original) untuk menjangkau segmen lebih luas.",
+    "ingredients": [
+      {
+        "name": "Bakso Sapi/Aci Kiloan (1 kg)",
+        "cost": 35000.0,
+        "amountUsed": 1.0,
+        "unit": "kg"
+      },
+      {
+        "name": "Minyak Goreng Sawit (1 Liter)",
+        "cost": 16000.0,
+        "amountUsed": 1.0,
+        "unit": "liter"
+      },
+      {
+        "name": "Bumbu Tabur Pedas Daun Jeruk",
+        "cost": 15000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Cabai Bubuk & Bawang Putih Goreng",
+        "cost": 8000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Standing Pouch Kemasan (30 pcs)",
+        "cost": 20000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Gas Elpiji & Operasional Goreng",
+        "cost": 10000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "cimol_kremes",
+    "name": "Cimol Kremes Kriuk Kekinian",
+    "category": "FNB",
+    "targetProduction": 45,
+    "marginPercent": 60.0,
+    "description": "Jajanan viral berbahan dasar aci yang digoreng garing di luar dan kenyal di dalam, disajikan dengan bumbu tabur kekinian.",
+    "dailySalesTarget": 40,
+    "targetDays": 30,
+    "businessTips": "Goreng dua kali (double fry) dengan api kecil di awal agar cimol tetap kriuk dan renyah tahan lama meski sudah dingin.",
+    "ingredients": [
+      {
+        "name": "Tepung Sagu/Aci (1 kg)",
+        "cost": 14000.0,
+        "amountUsed": 1.0,
+        "unit": "kg"
+      },
+      {
+        "name": "Tepung Terigu Protein Sedang",
+        "cost": 6000.0,
+        "amountUsed": 1.0,
+        "unit": "bungkus"
+      },
+      {
+        "name": "Bawang Putih & Daun Bawang Halus",
+        "cost": 5000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Minyak Goreng Sawit (1 Liter)",
+        "cost": 16000.0,
+        "amountUsed": 1.0,
+        "unit": "liter"
+      },
+      {
+        "name": "Bumbu Tabur Kekinian (Balado/Keju/BBQ)",
+        "cost": 18000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Cup/Standing Pouch Kemasan (40 pcs)",
+        "cost": 25000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Gas Elpiji & Operasional Goreng",
+        "cost": 10000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "corndog_mozza",
+    "name": "Corndog Sosis Mozzarella Korea",
+    "category": "FNB",
+    "targetProduction": 30,
+    "marginPercent": 55.0,
+    "description": "Jajanan kekinian ala Korea, sosis dan keju mozzarella molor yang dibalut adonan lalu digoreng, ditaburi gula dan saus.",
+    "dailySalesTarget": 30,
+    "targetDays": 30,
+    "businessTips": "Efek 'molor' keju saat digigit adalah daya tarik utama untuk konten media sosial — pastikan pelanggan tahu untuk memvideokannya.",
+    "ingredients": [
+      {
+        "name": "Sosis Sapi/Ayam Panjang (30 pcs)",
+        "cost": 75000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Mozzarella Cheese Stick/Blok (250 gr)",
+        "cost": 40000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Tepung Panir Kasar/Panko (500 gr)",
+        "cost": 18000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Tepung Terigu & Ragi Adonan",
+        "cost": 10000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Tusuk Sate Bambu (30 pcs)",
+        "cost": 5000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Minyak Goreng Sawit (1 Liter)",
+        "cost": 16000.0,
+        "amountUsed": 1.0,
+        "unit": "liter"
+      },
+      {
+        "name": "Saus Sambal, Mayones & Gula Pasir Taburan",
+        "cost": 12000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Kemasan Kertas Minyak & Mika",
+        "cost": 15000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      }
+    ]
+  },
+  {
+    "id": "croffle_kekinian",
+    "name": "Croffle (Croissant Waffle) Topping Kekinian",
+    "category": "FNB",
+    "targetProduction": 25,
+    "marginPercent": 55.0,
+    "description": "Perpaduan croissant dan waffle yang dipanggang crispy berlapis, disajikan hangat dengan topping cokelat, keju, atau es krim.",
+    "dailySalesTarget": 25,
+    "targetDays": 30,
+    "businessTips": "Gunakan adonan croissant beku (frozen) siap pakai agar produksi cepat, konsisten, dan tidak perlu keahlian baking tinggi.",
+    "ingredients": [
+      {
+        "name": "Adonan Croissant Beku (25 pcs)",
+        "cost": 125000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Cokelat Leleh & Keju Parut Topping",
+        "cost": 35000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Susu Kental Manis & Selai",
+        "cost": 15000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Es Krim Vanilla Scoop (Opsional)",
+        "cost": 30000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Kertas Minyak & Box Mika",
+        "cost": 20000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Gas/Listrik Cetakan Waffle",
+        "cost": 15000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "cromboloni",
+    "name": "Cromboloni Isi Krim Viral",
+    "category": "FNB",
+    "targetProduction": 20,
+    "marginPercent": 55.0,
+    "description": "Croissant lipat isi krim custard/cokelat yang sempat ramai di media sosial, bertekstur berlapis renyah dengan isian lumer manis.",
+    "dailySalesTarget": 20,
+    "targetDays": 30,
+    "businessTips": "Buat beberapa varian isi (tiramisu, biskoff, cokelat) dan jalankan sistem pre-order harian agar produk selalu fresh saat sampai ke pembeli.",
+    "ingredients": [
+      {
+        "name": "Adonan Croissant Lembaran Beku (20 pcs)",
+        "cost": 140000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Custard/Vla Cokelat Kemasan",
+        "cost": 30000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Biskoff/Selai Premium Topping",
+        "cost": 35000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Gula Halus Taburan",
+        "cost": 8000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Box Kemasan Kotak Kue (20 pcs)",
+        "cost": 20000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Gas Oven & Listrik",
+        "cost": 15000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "mie_pedas_gacoan",
+    "name": "Mie Pedas Setan ala Gacoan Rumahan",
+    "category": "FNB",
+    "targetProduction": 35,
+    "marginPercent": 55.0,
+    "description": "Olahan mie pedas kekinian dengan topping pangsit dan telur, terinspirasi tren mie kekinian yang digandrungi anak muda.",
+    "dailySalesTarget": 35,
+    "targetDays": 30,
+    "businessTips": "Sediakan pilihan level pedas dan topping tambahan (pangsit, ceker, telur) sebagai upsell untuk menaikkan omzet per pelanggan.",
+    "ingredients": [
+      {
+        "name": "Mie Basah/Kering (35 porsi)",
+        "cost": 52500.0,
+        "amountUsed": 1.0,
+        "unit": "kg"
+      },
+      {
+        "name": "Cabai Rawit & Bawang Merah Bumbu Pedas",
+        "cost": 30000.0,
+        "amountUsed": 1.0,
+        "unit": "kg"
+      },
+      {
+        "name": "Pangsit Goreng Isi Ayam",
+        "cost": 25000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Telur Ayam (1 Kg)",
+        "cost": 28000.0,
+        "amountUsed": 1.0,
+        "unit": "kg"
+      },
+      {
+        "name": "Kecap Manis & Bumbu Penyedap",
+        "cost": 15000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Mika/Box Kemasan Mie (35 pcs)",
+        "cost": 25000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Gas Elpiji & Operasional Masak",
+        "cost": 15000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "es_kopi_kepal",
+    "name": "Es Kopi/Susu Kepal Milo Viral",
+    "category": "FNB",
+    "targetProduction": 30,
+    "marginPercent": 60.0,
+    "description": "Minuman es serut lembut dengan topping susu kental atau bubuk milo tebal, tren dessert kekinian yang instagramable.",
+    "dailySalesTarget": 30,
+    "targetDays": 30,
+    "businessTips": "Sajikan dalam cup bening besar agar tampilan gunung es serut terlihat menarik dan menonjol untuk konten media sosial pembeli.",
+    "ingredients": [
+      {
+        "name": "Susu Kental Manis Putih (2 Kaleng)",
+        "cost": 24000.0,
+        "amountUsed": 1.0,
+        "unit": "kaleng"
+      },
+      {
+        "name": "Bubuk Milo/Cokelat Premium",
+        "cost": 30000.0,
+        "amountUsed": 1.0,
+        "unit": "kaleng"
+      },
+      {
+        "name": "Es Batu Kristal Serut (1 Kantong Besar)",
+        "cost": 10000.0,
+        "amountUsed": 1.0,
+        "unit": "kantong"
+      },
+      {
+        "name": "Cup Plastik Besar 22oz + Tutup (25 pcs)",
+        "cost": 25000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Sedotan & Sendok Plastik",
+        "cost": 8000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Listrik Mesin Serut Es",
+        "cost": 10000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  },
+  {
+    "id": "telur_gulung",
+    "name": "Telur Gulung Saus Sambal Kekinian",
+    "category": "FNB",
+    "targetProduction": 60,
+    "marginPercent": 65.0,
+    "description": "Jajanan sekolah viral berupa telur digulung tusuk, murah meriah dan digemari anak-anak hingga dewasa.",
+    "dailySalesTarget": 60,
+    "targetDays": 30,
+    "businessTips": "Jual dengan sistem satuan tusuk harga murah agar repeat buying tinggi, cocok untuk booth di depan sekolah atau area ramai anak muda.",
+    "ingredients": [
+      {
+        "name": "Telur Ayam (2 Kg)",
+        "cost": 56000.0,
+        "amountUsed": 1.0,
+        "unit": "kg"
+      },
+      {
+        "name": "Tusuk Sate Bambu (60 pcs)",
+        "cost": 8000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Saus Sambal & Saus Tomat Botolan",
+        "cost": 15000.0,
+        "amountUsed": 1.0,
+        "unit": "porsi"
+      },
+      {
+        "name": "Minyak Goreng Sawit (1/2 Liter)",
+        "cost": 8000.0,
+        "amountUsed": 1.0,
+        "unit": "liter"
+      },
+      {
+        "name": "Bumbu Perasa Tabur (Balado/BBQ)",
+        "cost": 10000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Kantong Plastik Kecil (60 pcs)",
+        "cost": 5000.0,
+        "amountUsed": 1.0,
+        "unit": "pack"
+      },
+      {
+        "name": "Gas Elpiji & Operasional Goreng",
+        "cost": 8000.0,
+        "amountUsed": 1.0,
+        "unit": "hari"
+      }
+    ]
+  }
+]

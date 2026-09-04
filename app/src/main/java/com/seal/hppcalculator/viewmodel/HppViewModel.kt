@@ -76,6 +76,66 @@ class HppViewModel(private val repository: HppRepository) : ViewModel() {
             repository.deleteProduct(id)
         }
     }
+
+    // Product Clone & Sample Recipe Methods
+    fun cloneProduct(source: ProductCost) {
+        val clonedIngredients = source.ingredients.mapIndexed { index, ing ->
+            ing.copy(id = System.currentTimeMillis() + index)
+        }
+        _currentDraft.value = source.copy(
+            id = 0L,
+            productName = "${source.productName} (Salinan)",
+            ingredients = clonedIngredients
+        )
+    }
+
+    fun applySampleRecipe(sample: com.seal.hppcalculator.data.model.SampleRecipe) {
+        val product = sample.toProductCost().copy(
+            ingredients = sample.ingredients.mapIndexed { index, ing ->
+                ing.copy(id = System.currentTimeMillis() + index)
+            }
+        )
+        _currentDraft.value = product
+    }
+
+    fun saveSampleRecipeToHistory(sample: com.seal.hppcalculator.data.model.SampleRecipe, onFinished: (Long) -> Unit = {}) {
+        viewModelScope.launch {
+            val product = sample.toProductCost().copy(
+                ingredients = sample.ingredients.mapIndexed { index, ing ->
+                    ing.copy(id = System.currentTimeMillis() + index)
+                }
+            )
+            repository.saveProductCost(product)
+            onFinished(product.id)
+        }
+    }
+
+    // Cashflow Methods
+    val cashTransactions: StateFlow<List<com.seal.hppcalculator.data.model.CashTransaction>> = repository.allCashTransactions
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = emptyList()
+        )
+
+    fun saveCashTransaction(transaction: com.seal.hppcalculator.data.model.CashTransaction) {
+        viewModelScope.launch {
+            repository.saveCashTransaction(transaction)
+        }
+    }
+
+    fun deleteCashTransaction(id: Long) {
+        viewModelScope.launch {
+            repository.deleteCashTransaction(id)
+        }
+    }
+
+    fun clearAllData(onSuccess: () -> Unit = {}) {
+        viewModelScope.launch {
+            repository.clearAllData()
+            onSuccess()
+        }
+    }
 }
 
 class HppViewModelFactory(private val repository: HppRepository) : ViewModelProvider.Factory {

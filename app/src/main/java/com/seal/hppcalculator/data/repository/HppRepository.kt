@@ -13,21 +13,36 @@ class HppRepository(private val hppDao: HppDao) {
     }
 
     suspend fun saveProductCost(product: ProductCost) {
-        // Since product ID might be 0 for new, insertProductCost returns the new ID.
-        // Or if it's an update, it will replace.
         val isUpdate = product.id != 0L
-        val productId = hppDao.insertProductCost(product.toEntity())
+        val insertedId = hppDao.insertProductCost(product.toEntity())
+        val targetProductId = if (isUpdate) product.id else insertedId
         
         if (isUpdate) {
             // Delete old ingredients before adding new ones
-            hppDao.deleteIngredientsForProduct(productId)
+            hppDao.deleteIngredientsForProduct(targetProductId)
         }
         
-        val ingredientEntities = product.ingredients.map { it.toEntity(productId) }
+        val ingredientEntities = product.ingredients.map { it.toEntity(targetProductId) }
         hppDao.insertIngredients(ingredientEntities)
     }
 
     suspend fun deleteProduct(id: Long) {
         hppDao.deleteProductCost(id)
+    }
+
+    // Cashflow Repository
+    val allCashTransactions: Flow<List<com.seal.hppcalculator.data.model.CashTransaction>> = 
+        hppDao.getAllCashTransactions().map { list -> list.map { it.toDomainModel() } }
+
+    suspend fun saveCashTransaction(transaction: com.seal.hppcalculator.data.model.CashTransaction): Long {
+        return hppDao.insertCashTransaction(transaction.toEntity())
+    }
+
+    suspend fun deleteCashTransaction(id: Long) {
+        hppDao.deleteCashTransaction(id)
+    }
+
+    suspend fun clearAllData() {
+        hppDao.clearAllData()
     }
 }

@@ -58,8 +58,8 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun HppCalculatorTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    // Set to false so the app consistently uses our custom brand theme instead of phone wallpaper
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
